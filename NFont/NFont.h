@@ -33,14 +33,14 @@ THE SOFTWARE.
 #ifndef _NFONT_H__
 #define _NFONT_H__
 
-#include "SDL.h"
+#include <SDL2/SDL.h>
 
 #if defined(FC_USE_SDL_GPU) && !defined(NFONT_USE_SDL_GPU)
 #define NFONT_USE_SDL_GPU
 #endif
 
 #ifdef NFONT_USE_SDL_GPU
-    #include "SDL_gpu.h"
+    #include <SDL2/SDL_gpu.h>
 #endif
 
 #ifndef NFONT_FORMAT
